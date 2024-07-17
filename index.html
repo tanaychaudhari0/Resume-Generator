@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+</head>
+<body style="background-color:aliceblue;">
+    <form action="/generate_resume" method="POST" style="display:flex ;flex-direction: column; ">
+       <div style=" font-family: Arial, sans-serif;font-weight: 500;display: flex;flex-direction: column;align-self: center;background-color: aquamarine;padding:20px 150px 20px 150px;border-radius:10px;color: black;">
+        <h1 style=" font-family: Arial, sans-serif;font-weight: 700;text-align: center; margin-bottom: 50px;">Resume Builder</h1>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="Name" style="padding:10px 100px 10px 10px;" name="name" placeholder="Enter your name" ><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" style="padding:5px 100px 5px 10px;" name="email" placeholder="rohan@gmail.com"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" style="padding:5px 100px 5px 10px;" name="phone" placeholder="+91 9545786589"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" style="padding:5px 100px 5px 10px;" name="address" placeholder="Permanent Address"><br>
+        <label for="objective">Objective:</label><br>
+        <textarea id="objective" name="objective" style="padding:10px 100px 15px 10px;color: gray;font-family: Arial, sans-serif;" placeholder="Tell us Your Objective"></textarea><br>
+        <label for="education">Education:</label><br>
+        <textarea id="education" name="education" style="padding:10px 150px 15px 10px;color: gray;font-family: Arial, sans-serif;" placeholder="Enter Your Education"></textarea> <br>
+        <label for="experience">Experience:</label><br>
+        <textarea id="experience" name="experience" style="padding:10px 250px 15px 10px;color: gray;font-family: Arial, sans-serif;" placeholder="Your Experince"></textarea><br>
+        <label for="skills">Skills:</label><br>
+        <textarea id="skills" name="skills" style="padding:10px 100px 50px 10px;color: gray;font-family: Arial, sans-serif;" placeholder="Enter all skills"></textarea><br>
+        <input type="submit" value="Generate Resume" style="padding:10px 10px 10px 10px; align-self: center;width: 150px;background-color: limegreen;border:none;color: white;">
+    </div>
+        
+    </form>
+</body>
+</html>
