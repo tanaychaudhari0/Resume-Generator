@@ -3,23 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>RESUME</title>
 </head>
-<body style="background-color: aquamarine; display:flex; flex-direction: column;">
-    <div style="background-color: white;width: 800px; padding:10px 20px 200px 30px; font-family: Arial, Helvetica, sans-serif;display: flex;flex-direction: column;align-self: center;" >
-        <h1 style=" font-family: Arial, sans-serif;font-weight: 700;text-align: center; padding-top: 20px;">Resume</h1>
-        <p><strong>Name:</strong> {{ user_data.name }}</p>
-        <p><strong>Email:</strong> {{ user_data.email }}</p>
-        <p><strong>Phone:</strong> {{ user_data.phone }}</p>
-        <p><strong>Address:</strong> {{ user_data.address }}</p>
-        <h2>Objective</h2>
-        <p>{{ user_data.objective }}</p>
-        <h2>Education</h2>
-        <p>{{ user_data.education }}</p>
-        <h2>Experience</h2>
-        <p>{{ user_data.experience }}</p>
-        <h2>Skills</h2>
-        <p>{{ user_data.skills }}</p>
+<body style="background-color: gray; display:flex; flex-direction: column;">
+    <div style="background-color: white;width: 700px; padding:10px 20px 200px 30px; font-family: Arial, Helvetica, sans-serif;display: flex;flex-direction: column;align-self: center;" >
+        <h1 style=" font-family: Arial, sans-serif;font-weight: 800;text-align: center; padding-top: 0px;font-size:xxx-large;">RESUME</h1>
+        <div>
+            <p><strong>Name:</strong> {{ user_data.name }}</p>
+            <p><strong>Email:</strong> {{ user_data.email }}</p>
+            <p><strong>Phone:</strong> {{ user_data.phone }}</p>
+            <p><strong>Address:</strong> {{ user_data.address }}</p>
+        </div>
+        <div style="display:flex; justify-content: space-between;width: 700px;">
+            <div style="height: 400px;width:335px;display: flex;flex-direction: column;justify-content:right;">
+                <div style="width:335px;">
+                    <h1 >ABOUT</h1>
+                    <div style="background-color: black;height:3px;position: relative;bottom:22px;width: 300px;"></div>
+                    <p style="width:300px;position:relative;bottom:15PX;">{{ user_data.objective }}</p>
+                </div>
+                <div>
+                    <h1 >EDUCATION</h1>
+                    <div style="background-color: black;height:3px;position: relative;bottom:22px;width: 300px;"></div>
+                    <p style="width:300px;position:relative;bottom:15PX;">{{ user_data.education }}</p>
+                </div>
+
+            </div>
+            
+            <div style="height: 400px;width:335px;display: flex;flex-direction: column;justify-content: space-between;justify-content: right;">
+                <div>
+                    <h1 >EXPERIENCE</h1>
+                    <div style="background-color: black;height:3px;position: relative;bottom:22px;width: 300px;"></div>
+                    <p style="width:300px;position:relative;bottom:15PX;">{{ user_data.experience }}</p>
+                </div>
+                <div >
+                    <h1 >SKILLS</h1>
+                    <div style="background-color: black;height:3px;position: relative;bottom:22px;width: 300px;"></div>
+
+                    <p style="width:300px;position:relative;bottom:15PX;">{{ user_data.skills }}</p>
+                </div>
+
+            </div>
+        </div>
 
     </div>
     
